@@ -84,7 +84,7 @@ contract SupplyChain {
 
 
 
-    //传入收款公司，欠款金额和到账时间(到账时间需要自行转换为unix时间戳形式)来定义一个收据，交易上链
+    //传入收款公司，欠款金额和到账时间(到账时间为多少天后到期)来定义一个收据，交易上链
 
     function newReceipt(address _to, uint _amount, uint _time) public returns(bytes32){
 
